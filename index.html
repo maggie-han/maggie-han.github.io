@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="description" content="Personal Website">
+				<meta name="author" content="Maggie Han">
 
-<style>
+					<title>Maggie Han</title>
+
+					<!-- bootstrap -->
+					<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+					<!-- custom fonts -->
+					<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+					</head>
+					<style>
 	h1{
     	font-family:Lobster,Monospace;
         color:#4286f4;
     }
-    
+
     body{
     	background-color:#e8fdff;
         font-family:Tahoma;
     }
-    
+
     .white-border{
         font-family:Lobster;
         font-size:16px;
@@ -22,19 +32,32 @@
         border-style: solid;
     	border-radius: 5px;
     }
-</style>
+					</style>
+					<script>
+function clickProjects(){
+	document.getElementsByTagName('h1')[1].scrollIntoView({behavior:'smooth'});
+}
+function clickResume(){
+}
+					</script>
+					<body>
 
-<div class="text-center container-fluid">
-<h1>Hello World</h1>
-<p> Hi! I'm Maggie, a computer engineering student at the University of Waterloo.</p>
+						<div class="text-center container-fluid">
+							<h1>Hello World</h1>
+							<p> Hi! I'm Maggie, a computer engineering student at the University of Waterloo.</p>
 
+							<div class="row col-lg-12">
+								<div class="col-xs-4"><button class= "btn btn-block btn-info white-border" onClick=clickProjects();>Projects</button></div>
+								<div class="col-xs-4"><button class= "btn btn-block btn-info white-border"><a href="./files/resume.pdf">Resume</a></button></div>
+								<div class="col-xs-4"><button class= "btn btn-block btn-info white-border">Contact</button></div>
 
-<div class="row col-lg-12">
-<div class="col-xs-4"><button class= "btn btn-block btn-info white-border">Projects</button></div>
-<div class="col-xs-4"><button class= "btn btn-block btn-info white-border">Resume</button></div>
-<div class="col-xs-4"><button class= "btn btn-block btn-info white-border">Contact</button></div>
+							</div>
+						</div>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-</div>
-</div>
-</body>
-</html>
+						</p>
+						<div id="Projects">
+							<h1>Projects</h1>
+						</div>
+					</body>
+				</html>
