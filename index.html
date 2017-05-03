@@ -35,6 +35,8 @@
     body{
     	background-color:#e8fdff;
         font-family:Tahoma;
+        width:77%;
+        margin:auto;
     }
 
     .white-border{
@@ -44,15 +46,21 @@
         border-width:2px;
         border-style: solid;
     	border-radius: 5px;
+        max-width:200px;
     }
     
     .project{
-    	width:80%;
         margin:auto;
         border-color:white;
         border-width:5px;
-        border-radius: 10%;
+        border-radius: 20px;
     	border-style: solid;
+        padding:10px;
+        max-height:300px;
+    }
+    
+    .project-img{
+    	max-height:270px;
     }
     
     .rounded{
@@ -93,20 +101,26 @@ function clickResume(){
 				<h1>Hello World</h1>
 				<p> Hi! I'm Maggie, a computer engineering student at the University of Waterloo.</p>
 
-				<div class="row col-lg-12 text-center" style="width:70%; margin:auto">
-					<div class="col-xs-4"><a href="#Projects"><button class= "btn btn-block btn-info white-border">Projects</button></a></div>
-					<div class="col-xs-4"><a href="./files/resume.pdf"><button class= "btn btn-block btn-info white-border">Resume</button></a></div>
-					<div class="col-xs-4"><a href="#Contact"><button class= "btn btn-block btn-info white-border">Contact</button></a></div>
+				<div class="row col-lg-12 text-center" style="max-width:600px margin:auto">
+					<div class="col-xs-3"><a href="#About"><button class= "btn btn-block btn-info white-border">About</button></a></div>
+					<div class="col-xs-3"><a href="#Projects"><button class= "btn btn-block btn-info white-border">Projects</button></a></div>
+					<div class="col-xs-3"><a href="./files/resume.pdf"><button class= "btn btn-block btn-info white-border">Resume</button></a></div>
+					<div class="col-xs-3"><a href="#Contact"><button class= "btn btn-block btn-info white-border">Contact</button></a></div>
 
 				</div>
 			</div>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-</p>
-            <div id="Projects" class="text-center container-fluid">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            
+			<div id="About" class = "text-center container-fluid">
+			<h2>About</h2>
+			Maggie doesn’t want to simply settle into one aspect of life, instead she chooses to engage in as many disciplines as possible. She is thoroughly fascinated by the beauty of math and science, intrigued by philosophy and psychology, passionate about social justice and up to date with current issues. You might find her running between different engineering classrooms, engaging in a heated debate, pondering over the earthworms on the sidewalk, or getting lost in her own world.
+			
+			</div>
+			
+			<div id="Projects" class="text-center container-fluid">
             <h2>Projects</h2>
 				<div id="Windtunnel" class="row project">
-            		<div class = "col-xs-8"><img class ="img-responsive" src = "https://maggie-han.github.io/files/windtunnel_display.jpg"></div>
+            		<div class = "col-xs-8"><img class ="img-responsive project-img" src = "./files/windtunnel_display.jpg"></div>
                     <div class = "col-xs-4">
                     	<div class = "row project-title">Wind Tunnel</div>
                     </div>
@@ -120,10 +134,10 @@ function clickResume(){
             
             <div id="Contact" class="text-center container-fluid">
             <h2>Contact Information</h2>
-            <a href="https://github.com/maggie-han" target="_blank"><i class = "fa fa-github-square"></i> Github</a>
-            <a href="https://www.linkedin.com/in/maggie-h-634623104/" target="_blank"><i class = "fa fa-linkedin"></i> Linkedin</a>   
-            <a href="https://www.facebook.com/sunnyorrainy" target="_blank"><i class = "fa fa-facebook-official"></i> Facebook</a>   
-            <p><i class = "fa fa-envelope"></i> Email: maggie.han@edu.uwaterloo.ca</p>
+            <div><a href="https://github.com/maggie-han" target="_blank"><i class = "fa fa-github-square"></i> Github</a></div>
+            <div><a href="https://www.linkedin.com/in/maggie-han" target="_blank"><i class = "fa fa-linkedin"></i> Linkedin</a></div>   
+            <div><a href="https://www.facebook.com/sunnyorrainy" target="_blank"><i class = "fa fa-facebook-official"></i> Facebook</a></div>   
+            <div><i class = "fa fa-envelope"></i> Email: maggie.han@edu.uwaterloo.ca</div>
             </div>
 		</body>
 	</html>
