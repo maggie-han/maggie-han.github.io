@@ -12,6 +12,8 @@
 	
 	<!-- custom fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 </head>
 	<style>
@@ -23,19 +25,19 @@
     	color:black;
     }
 	h1{
-    	font-family:Lobster,Monospace;
-        color:#4286f4;
+    	font-family:Fredericka the Great,Monospace;
+        color:#0a47a9;
     }
     
     h2{
-    	font-family:Lobster,Monospace;
+    	font-family:Fredericka the Great,Monospace;
         color:#4286f4;
     }
 
     body{
     	background-color:#e8fdff;
-        font-family:Tahoma;
-        width:77%;
+        font-family:Maven Pro;
+        width:70%;
         margin:auto;
     }
 
@@ -51,16 +53,19 @@
     
     .project{
         margin:auto;
+        margin-bottom:10px;
         border-color:white;
         border-width:5px;
         border-radius: 20px;
     	border-style: solid;
         padding:10px;
         max-height:300px;
+        max-width:800px;
     }
     
     .project-img{
     	max-height:270px;
+        margin:auto;
     }
     
     .rounded{
@@ -70,14 +75,14 @@
     }
     
     .project-title{
-    	//background-color:#5BC0DE;
-    	font-family:Lobster;
-        font-size:18px;
-    	//border-color:white;
-        //border-width:2px;
-        //border-style: solid;
-        //border-radius: 5px;
+    	font-family:Fredericka the Great,Monospace;
+        font-size:20px;
         color:#5BC0DE;
+    }
+    
+    .technology{
+    	font-family:Lobster,Monospace;
+        font-size:15px;
     }
     
     .img a {
@@ -104,7 +109,7 @@ function clickResume(){
 				<div class="row col-lg-12 text-center" style="max-width:600px margin:auto">
 					<div class="col-xs-3"><a href="#About"><button class= "btn btn-block btn-info white-border">About</button></a></div>
 					<div class="col-xs-3"><a href="#Projects"><button class= "btn btn-block btn-info white-border">Projects</button></a></div>
-					<div class="col-xs-3"><a href="./files/resume.pdf"><button class= "btn btn-block btn-info white-border">Resume</button></a></div>
+					<div class="col-xs-3"><a href="https://maggie-han.github.io/files/resume.pdf"><button class= "btn btn-block btn-info white-border">Resume</button></a></div>
 					<div class="col-xs-3"><a href="#Contact"><button class= "btn btn-block btn-info white-border">Contact</button></a></div>
 
 				</div>
@@ -120,14 +125,26 @@ function clickResume(){
 			<div id="Projects" class="text-center container-fluid">
             <h2>Projects</h2>
 				<div id="Windtunnel" class="row project">
-            		<div class = "col-xs-8"><img class ="img-responsive project-img" src = "./files/windtunnel_display.jpg"></div>
+            		<div class = "col-xs-8"><img class ="img-responsive project-img" src = "https://maggie-han.github.io/files/windtunnel_display.jpg"></div>
                     <div class = "col-xs-4">
                     	<div class = "row project-title">Wind Tunnel</div>
                     </div>
                     <div class = "col-xs-4">
-                    	<div class = "row technology">Java</div>
-                        <div class = "row technology">Arduino</div>
+                    	<div class = " technology">Java</div>
+                        <div class = " technology">Arduino</div>
+                        <div class = " technology">AutoCAD</div>
                         Windtunnel which measures wind spead, force of lift and drag on air foil through Arduino Mega. User could control angle of attack and wind speed through Java GUI.
+                    </div>
+                </div>
+                
+                <div id="GameofLife" class="row project">
+            		<div class = "col-xs-8"><img class ="img-responsive project-img" src = "https://maggie-han.github.io/files/Gameoflife_advanced.png"></div>
+                    <div class = "col-xs-4">
+                    	<div class = "row project-title">Advanced Game of Life</div>
+                    </div>
+                    <div class = "col-xs-4">
+                    	<div class = " technology">Java</div>
+                        An apocalyptic spin on Conway's Game of Life. A simulation game which tracks the interaction between 6 classes of species. User can edit game landscape (sandbox), watch simulation run over generations, and load preset conditions.
                     </div>
                 </div>
             </div>
